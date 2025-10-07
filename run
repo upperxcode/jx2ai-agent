@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Este script simplifica a execução e compilação da aplicação Wails,
+# incluindo as tags de compilação necessárias para ambientes Linux.
+
+# Para o script em caso de erro
+set -e
+
+case "$1" in
+  dev)
+    echo "🚀 Iniciando servidor de desenvolvimento com a tag 'netgo'..."
+    wails dev -tags netgo
+    ;;
+  build)
+    echo "📦 Compilando a aplicação com a tag 'netgo'..."
+    wails build -tags netgo
+    ;;
+  npm)
+    cd frontend
+    echo "📦 Executando comando npm..."
+    npm "$2"
+    cd ..
+    ;;
+  clean)
+    echo "🧹 Limpando arquivos de build..."
+    go clean -modcache
+    ;; 
+  *)
+    echo "Uso: $0 {dev|build}"
+    exit 1
+    ;;
+esac

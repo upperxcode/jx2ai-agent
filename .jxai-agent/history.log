@@ -1,0 +1,54 @@
+como fazer um sistema com as quatro operações básicas em python?
+como fazer um sistema com as quatro operações básicas em c++ com exemplo de uso?
+faça um programa em com as quatro operações básicas com exemplo de uso, em c#
+faça um programa em com as quatro operações básicas com exemplo de uso, em c++
+refore esse progrma colocando a opção de fatoração
+refore esse progrma colocando a opção de fatoração
+refore esse progrma colocando a opção de fatoração
+isso era pra vir em formato de diff, o que eu preciso fazer pra instruir a mandar uma retoração ou sugestão de código sempre como um diff?
+refotore esse progrma colocando a opção de fatoração
+refore esse progrma colocando a opção de fatoração
+refotore esse progrma colocando a opção de fatoração
+pode mandar um teste de uma diff de um código go?
+você me enviou em formato de diff?
+você enviou?
+preciso que mande me formato de diff pois estou desenvolvendo um aplicativo de chatbot e isso me ajudaria a fazer meu teste, pode usar o arquivo anexado como base e fazer uma retoração simples
+existem ferramentas que você pode acessar para ver o meu arquivo anexo
+me forneça as alterações em formato diff
+o código original é o que está em anexo
+você não vê o anexo internal/agent/agent.go? quero uma diff de refatoração dele
+refatore o código em anexado
+eu te enviei isso>### ATTACHED FILES ###n
+--- CONTENTS OF FILE: internal/agent/agent.go --- como posso ser mais claro para atender minha solitação anterior?
+porque não usou o arquivo em anexo internal/agent/agent.go?
+esse não é o conteúdo de internal/agent/agent.go que eu te forneci
+refatore o código do arquivo em anexo
+refatore o código lendo o conteúdo do arquivo em anexo
+você invetou esse conteúdo? se sim, você não conseguiu usar as ferramentas para ler o arquivo internal/agent/agent.go?
+onde você pegou isso?
+você consegue ler o conteúdo de internal/agent/agent.go?
+você consegue usar a ferramenta interna /read para ler o conteúdo desse arquivo?
+você consegue usar as ferramentas internas para ler o conteúdo de internal/agent/agent.go?
+isso não se parece com o meu código, conseguiu ler o arquivo?
+me forneça uma diff disso
+porque inventou esse código, não conseguiu ler o meu arquivo?
+/model ollama/qwen2.5-coder:7b
+refatore o código em anexo
+refatore o arquivo internal/agent/agent.go
+refatore o arquivo em anexo
+me mostre o código em anexo e depois me forneça uma sugestão de refatoração
+/attach add internal/agent/agent.go
+analise o código para mim
+sugira alguma refatoração nele em formato diff
+/read main.go
+refatore o arquivo
+Adicione um logger à struct App e configure-o nas opções do Wails em main.go
+Adicione um logger à struct App e configure-o nas opções do Wails em ./main.go
+olá
+analise o arquivo main.go e adicione comentários de documentação
+veja isso>**Erro ao aplicar patch:** erro ao executar o comando patch para 'main.go': exit status 2
+--- Stderr ---
+patch: **** malformed patch at line 15: 	"embed"
+
+
+--------------
