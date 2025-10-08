@@ -3,9 +3,9 @@ package agent
 import (
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/config"
-	"github.com/johnxcode/jx2ai-agent/api/internal/event"
-	"github.com/johnxcode/jx2ai-agent/api/internal/llm/provider"
+	"github.com/upperxcode/jx2ai-agent/api/internal/config"
+	"github.com/upperxcode/jx2ai-agent/api/internal/event"
+	"github.com/upperxcode/jx2ai-agent/api/internal/llm/provider"
 )
 
 func (a *agent) eventPromptSent(sessionID string) {

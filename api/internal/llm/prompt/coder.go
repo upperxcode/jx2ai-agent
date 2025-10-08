@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/config"
-	"github.com/johnxcode/jx2ai-agent/api/internal/llm/tools"
+	"github.com/upperxcode/jx2ai-agent/api/internal/config"
+	"github.com/upperxcode/jx2ai-agent/api/internal/llm/tools"
 
 	"github.com/charmbracelet/catwalk/pkg/catwalk"
 )

@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"log/slog"
 
-	"github.com/charmbracelet/crush/internal/config"
-	"github.com/charmbracelet/crush/internal/lsp/util"
 	"github.com/charmbracelet/x/powernap/pkg/lsp/protocol"
+	"github.com/upperxcode/jx2ai-agent/api/internal/config"
+	"github.com/upperxcode/jx2ai-agent/api/internal/lsp/util"
 )
 
 // HandleWorkspaceConfiguration handles workspace configuration requests

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/log"
+	"github.com/upperxcode/jx2ai-agent/api/internal/log"
 )
 
 var getRg = sync.OnceValue(func() string {

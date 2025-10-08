@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/llm/tools"
-	"github.com/johnxcode/jx2ai-agent/api/internal/message"
-	"github.com/johnxcode/jx2ai-agent/api/internal/session"
+	"github.com/upperxcode/jx2ai-agent/api/internal/llm/tools"
+	"github.com/upperxcode/jx2ai-agent/api/internal/message"
+	"github.com/upperxcode/jx2ai-agent/api/internal/session"
 )
 
 type agentTool struct {

@@ -1,8 +1,8 @@
 package provider
 
 import (
-	"github.com/johnxcode/jx2ai-agent/api/internal/config"
-	"github.com/johnxcode/jx2ai-agent/api/internal/log"
+	"github.com/upperxcode/jx2ai-agent/api/internal/config"
+	"github.com/upperxcode/jx2ai-agent/api/internal/log"
 
 	"github.com/openai/openai-go"
 	"github.com/openai/openai-go/azure"

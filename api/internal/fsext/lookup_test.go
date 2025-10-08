@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/charmbracelet/crush/internal/home"
 	"github.com/stretchr/testify/require"
+	"github.com/upperxcode/jx2ai-agent/api/internal/home"
 )
 
 func TestLookupClosest(t *testing.T) {

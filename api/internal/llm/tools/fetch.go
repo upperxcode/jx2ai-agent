@@ -11,7 +11,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/permission"
+	"github.com/upperxcode/jx2ai-agent/api/internal/permission"
 
 	md "github.com/JohannesKaufmann/html-to-markdown"
 	"github.com/PuerkitoBio/goquery"

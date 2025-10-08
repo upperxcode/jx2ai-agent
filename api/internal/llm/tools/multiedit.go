@@ -11,12 +11,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/csync"
-	"github.com/johnxcode/jx2ai-agent/api/internal/diff"
-	"github.com/johnxcode/jx2ai-agent/api/internal/fsext"
-	"github.com/johnxcode/jx2ai-agent/api/internal/history"
-	"github.com/johnxcode/jx2ai-agent/api/internal/lsp"
-	"github.com/johnxcode/jx2ai-agent/api/internal/permission"
+	"github.com/upperxcode/jx2ai-agent/api/internal/csync"
+	"github.com/upperxcode/jx2ai-agent/api/internal/diff"
+	"github.com/upperxcode/jx2ai-agent/api/internal/fsext"
+	"github.com/upperxcode/jx2ai-agent/api/internal/history"
+	"github.com/upperxcode/jx2ai-agent/api/internal/lsp"
+	"github.com/upperxcode/jx2ai-agent/api/internal/permission"
 )
 
 type MultiEditOperation struct {

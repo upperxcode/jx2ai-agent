@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/csync"
-	"github.com/johnxcode/jx2ai-agent/api/internal/lsp"
+	"github.com/upperxcode/jx2ai-agent/api/internal/csync"
+	"github.com/upperxcode/jx2ai-agent/api/internal/lsp"
 
 	"github.com/charmbracelet/x/powernap/pkg/lsp/protocol"
 )

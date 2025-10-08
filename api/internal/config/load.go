@@ -15,11 +15,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/csync"
-	"github.com/johnxcode/jx2ai-agent/api/internal/env"
-	"github.com/johnxcode/jx2ai-agent/api/internal/fsext"
-	"github.com/johnxcode/jx2ai-agent/api/internal/home"
-	"github.com/johnxcode/jx2ai-agent/api/internal/log"
+	"github.com/upperxcode/jx2ai-agent/api/internal/csync"
+	"github.com/upperxcode/jx2ai-agent/api/internal/env"
+	"github.com/upperxcode/jx2ai-agent/api/internal/fsext"
+	"github.com/upperxcode/jx2ai-agent/api/internal/home"
+	"github.com/upperxcode/jx2ai-agent/api/internal/log"
 
 	"github.com/charmbracelet/catwalk/pkg/catwalk"
 	powernapConfig "github.com/charmbracelet/x/powernap/pkg/config"

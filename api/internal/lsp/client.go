@@ -12,13 +12,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/charmbracelet/crush/internal/config"
-	"github.com/charmbracelet/crush/internal/csync"
-	"github.com/charmbracelet/crush/internal/fsext"
-	"github.com/charmbracelet/crush/internal/home"
 	powernap "github.com/charmbracelet/x/powernap/pkg/lsp"
 	"github.com/charmbracelet/x/powernap/pkg/lsp/protocol"
 	"github.com/charmbracelet/x/powernap/pkg/transport"
+	"github.com/upperxcode/jx2ai-agent/api/internal/config"
+	"github.com/upperxcode/jx2ai-agent/api/internal/csync"
+	"github.com/upperxcode/jx2ai-agent/api/internal/fsext"
+	"github.com/upperxcode/jx2ai-agent/api/internal/home"
 )
 
 type Client struct {

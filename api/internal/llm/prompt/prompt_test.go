@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/home"
+	"github.com/upperxcode/jx2ai-agent/api/internal/home"
 )
 
 func TestExpandPath(t *testing.T) {

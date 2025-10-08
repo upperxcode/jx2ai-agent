@@ -10,9 +10,9 @@ import (
 	"sync"
 
 	"github.com/charlievieth/fastwalk"
-	"github.com/charmbracelet/crush/internal/csync"
-	"github.com/charmbracelet/crush/internal/home"
 	ignore "github.com/sabhiram/go-gitignore"
+	"github.com/upperxcode/jx2ai-agent/api/internal/csync"
+	"github.com/upperxcode/jx2ai-agent/api/internal/home"
 )
 
 // commonIgnorePatterns contains commonly ignored files and directories

@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/charmbracelet/crush/internal/home"
+	"github.com/upperxcode/jx2ai-agent/api/internal/home"
 )
 
 // Lookup searches for a target files or directories starting from dir

@@ -14,6 +14,10 @@ export function ExecuteCommand(arg1) {
   return window['go']['api']['App']['ExecuteCommand'](arg1);
 }
 
+export function Files() {
+  return window['go']['api']['App']['Files']();
+}
+
 export function Greet(arg1) {
   return window['go']['api']['App']['Greet'](arg1);
 }
@@ -26,6 +30,18 @@ export function ListDirectory(arg1) {
   return window['go']['api']['App']['ListDirectory'](arg1);
 }
 
+export function LspClients() {
+  return window['go']['api']['App']['LspClients']();
+}
+
+export function Permissions() {
+  return window['go']['api']['App']['Permissions']();
+}
+
 export function ReadFile(arg1) {
   return window['go']['api']['App']['ReadFile'](arg1);
+}
+
+export function SetCurrentFile(arg1) {
+  return window['go']['api']['App']['SetCurrentFile'](arg1);
 }

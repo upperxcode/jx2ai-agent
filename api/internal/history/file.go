@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/charmbracelet/crush/internal/db"
-	"github.com/charmbracelet/crush/internal/pubsub"
 	"github.com/google/uuid"
+	"github.com/upperxcode/jx2ai-agent/api/internal/db"
+	"github.com/upperxcode/jx2ai-agent/api/internal/pubsub"
 )
 
 const (

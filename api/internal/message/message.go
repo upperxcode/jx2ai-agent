@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/db"
-	"github.com/johnxcode/jx2ai-agent/api/internal/pubsub"
+	"github.com/upperxcode/jx2ai-agent/api/internal/db"
+	"github.com/upperxcode/jx2ai-agent/api/internal/pubsub"
 
 	"github.com/google/uuid"
 )

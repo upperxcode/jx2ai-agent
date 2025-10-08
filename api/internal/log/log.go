@@ -9,7 +9,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/event"
+	"github.com/upperxcode/jx2ai-agent/api/internal/event"
 
 	"gopkg.in/natefinch/lumberjack.v2"
 )

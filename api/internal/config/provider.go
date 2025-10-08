@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/home"
+	"github.com/upperxcode/jx2ai-agent/api/internal/home"
 
 	"github.com/charmbracelet/catwalk/pkg/catwalk"
 	"github.com/charmbracelet/catwalk/pkg/embedded"

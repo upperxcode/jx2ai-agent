@@ -10,7 +10,7 @@ import {
     ExecuteCommand,
     ListCommands,
 } from '../../../wailsjs/go/api/App';
-import { main } from '../../../wailsjs/go/models';
+import * as main from '../../../wailsjs/go/models';
 
 export class InputBar {
     private element: HTMLElement;
@@ -53,7 +53,7 @@ export class InputBar {
 
     private async loadCommands() {
         const commands = await ListCommands();
-        const commandNames = commands.map((c: main.CommandInfo) => c.name);
+        const commandNames = commands.map((c) => c.name);
         this.commandSelector.setCommands(commandNames);
     }
 
@@ -135,7 +135,7 @@ export class InputBar {
         }
     }
 
-    private updateState(newState: main.UIState) {
+    private updateState(newState: main.api.UIState) {
         this.currentFile = newState.currentFile || null;
         this.attachedFiles = newState.attachedFiles || [];
         this.render();
@@ -213,16 +213,12 @@ export class InputBar {
                 case 'Enter':
                     e.preventDefault();
                     // Se a lista está visível, primeiro usamos o Enter para confirmar a seleção,
-                    // o que preenche o input. A execução real acontecerá no próximo Enter.
-                    // Se o usuário já digitou um comando completo, executamos diretamente.
-                    const text = this.inputElement.value.trim();
-                    const parts = text.substring(1).split(' ');
-                    const isCompleteCommand = parts.length > 1 && (parts[0] === 'currentfile' || (parts[0] === 'attach' && parts.length > 2));
-
-                    if (isCompleteCommand) {
-                        this.executeCurrentInput();
-                    } else if (this.commandSelector.hasSelection()) {
+                    // o que preenche o input.
+                    if (this.commandSelector.hasSelection()) {
                         this.commandSelector.confirmSelection();
+                    } else {
+                        // Se não há seleção, o comando no input é executado.
+                        this.executeCurrentInput();
                     }
 
                     break;
@@ -250,8 +246,13 @@ export class InputBar {
 
     private async executeCommand(text: string) {
         try {
-            const newState = await ExecuteCommand(text);
+            const newState: main.api.UIState = await ExecuteCommand(text);
             this.updateState(newState);
+            // Se o comando retornou um conteúdo para ser visualizado, envia como uma mensagem do bot.
+            if (newState.viewContent) {
+                // O onSendMessage é uma função que vem do App.ts e adiciona a mensagem na ChatWindow
+                this.onSendMessage(newState.viewContent);
+            }
             this.inputElement.value = ''; // Limpa o input após o sucesso
             this.commandSelector.hide();
         } catch (error) {

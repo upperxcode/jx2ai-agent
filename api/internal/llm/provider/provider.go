@@ -6,9 +6,9 @@ import (
 
 	"github.com/charmbracelet/catwalk/pkg/catwalk"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/config"
-	"github.com/johnxcode/jx2ai-agent/api/internal/llm/tools"
-	"github.com/johnxcode/jx2ai-agent/api/internal/message"
+	"github.com/upperxcode/jx2ai-agent/api/internal/config"
+	"github.com/upperxcode/jx2ai-agent/api/internal/llm/tools"
+	"github.com/upperxcode/jx2ai-agent/api/internal/message"
 )
 
 type EventType string

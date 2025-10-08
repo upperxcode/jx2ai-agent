@@ -12,9 +12,9 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/csync"
-	"github.com/johnxcode/jx2ai-agent/api/internal/lsp"
-	"github.com/johnxcode/jx2ai-agent/api/internal/permission"
+	"github.com/upperxcode/jx2ai-agent/api/internal/csync"
+	"github.com/upperxcode/jx2ai-agent/api/internal/lsp"
+	"github.com/upperxcode/jx2ai-agent/api/internal/permission"
 )
 
 //go:embed view.md

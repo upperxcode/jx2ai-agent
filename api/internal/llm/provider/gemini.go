@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/config"
-	"github.com/johnxcode/jx2ai-agent/api/internal/llm/tools"
-	"github.com/johnxcode/jx2ai-agent/api/internal/log"
-	"github.com/johnxcode/jx2ai-agent/api/internal/message"
+	"github.com/upperxcode/jx2ai-agent/api/internal/config"
+	"github.com/upperxcode/jx2ai-agent/api/internal/llm/tools"
+	"github.com/upperxcode/jx2ai-agent/api/internal/log"
+	"github.com/upperxcode/jx2ai-agent/api/internal/message"
 
 	"github.com/charmbracelet/catwalk/pkg/catwalk"
 	"github.com/google/uuid"

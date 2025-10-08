@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/env"
-	"github.com/johnxcode/jx2ai-agent/api/internal/shell"
+	"github.com/upperxcode/jx2ai-agent/api/internal/env"
+	"github.com/upperxcode/jx2ai-agent/api/internal/shell"
 )
 
 type VariableResolver interface {

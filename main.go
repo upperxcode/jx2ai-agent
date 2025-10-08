@@ -1,10 +1,11 @@
-package api
+package main
 
 import (
+	"context"
 	"embed"
 	"log"
 
-	"github.com/johnxcode/jx2ai-agent/api"
+	"github.com/upperxcode/jx2ai-agent/api"
 
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/logger"
@@ -18,8 +19,10 @@ import (
 var assets embed.FS
 
 func main() {
+	// Inicializa a configuração da aplicação
+
 	// Create an instance of the app structure
-	app, err := api.NewApp()
+	app, err := api.NewAppWithServices(context.Background())
 	if err != nil {
 		log.Fatalf("Erro ao inicializar a aplicação: %v", err)
 	}

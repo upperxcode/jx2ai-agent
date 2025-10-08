@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/permission"
+	"github.com/upperxcode/jx2ai-agent/api/internal/permission"
 )
 
 type DownloadParams struct {

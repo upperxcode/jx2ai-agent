@@ -6,25 +6,27 @@
 # Para o script em caso de erro
 set -e
 
-case "$1" in
+# Cria um diretório temporário local para evitar problemas de permissão com /tmp (noexec)
+TMP_DIR=$(pwd)/.tmp
+mkdir -p "$TMP_DIR"
+chmod 755 "$TMP_DIR" # Garante permissão de execução
+export TMPDIR="$TMP_DIR"
+ echo "🚀 Diretório temporário criado em: $TMPDIR..."
+
+COMMAND=$1
+shift # Remove o primeiro argumento (dev/build) para que $@ contenha o resto
+
+case "$COMMAND" in
   dev)
     echo "🚀 Iniciando servidor de desenvolvimento com a tag 'netgo'..."
-    wails dev -tags netgo
+    echo "Usando diretório temporário: $TMPDIR"
+    wails dev -tags netgo -v 2 "$@"
     ;;
   build)
     echo "📦 Compilando a aplicação com a tag 'netgo'..."
-    wails build -tags netgo
+    echo "Usando diretório temporário: $TMPDIR"
+    wails build -tags netgo -v 2 "$@"
     ;;
-  npm)
-    cd frontend
-    echo "📦 Executando comando npm..."
-    npm "$2"
-    cd ..
-    ;;
-  clean)
-    echo "🧹 Limpando arquivos de build..."
-    go clean -modcache
-    ;; 
   *)
     echo "Uso: $0 {dev|build}"
     exit 1

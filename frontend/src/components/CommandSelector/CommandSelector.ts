@@ -55,6 +55,11 @@ export class CommandSelector {
         return this.visible;
     }
 
+    // Verifica se os itens atuais são subitens (arquivos/subcomandos) ou os comandos principais.
+    hasSubItems(): boolean {
+        return this.currentCommand !== null;
+    }
+
     hasSelection(): boolean {
         return this.selectedIndex !== -1 && this.currentItems.length > 0;
     }
@@ -175,16 +180,19 @@ export class CommandSelector {
                 const newPath = `${basePath} ${this.currentPath}/${selectedItem}`.replace(/\s+/g, ' ').replace(/\.\/|[/]{2,}/g, '/');
                 this.actions.onUpdateInput(newPath);
             } else {
-                // Se for um arquivo, apenas completa o texto no input. A execução será no Enter.
-                const finalPath = filepath.join(this.currentPath, selectedItem);
-                let inputText = `/${this.currentCommand} ${finalPath}`;
+                // Se for um arquivo, completa o caminho no input.
+                const currentInput = this.actions.getCurrentInput();
+                const inputParts = currentInput.trim().split(' ');
+                
+                let basePath = `/${this.currentCommand}`;
                 if (this.currentCommand === 'attach') {
-                    const currentInput = this.actions.getCurrentInput();
-                    const inputParts = currentInput.split(' ');
-                    const subCommand = inputParts[1]; // 'add' ou 'delete'
-                    inputText = `/${this.currentCommand} ${subCommand} ${finalPath}`;
+                    basePath += ` ${inputParts[1]}`; // Mantém o subcomando 'add' ou 'delete'
                 }
+
+                const finalPath = filepath.join(this.currentPath, selectedItem);
+                const inputText = `${basePath} ${finalPath}`;
                 this.actions.onUpdateInput(inputText);
+                this.hide(); // Esconde o seletor pois um arquivo foi selecionado.
             }
         }
     }

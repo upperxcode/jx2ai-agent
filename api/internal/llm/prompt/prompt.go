@@ -6,10 +6,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/config"
-	"github.com/johnxcode/jx2ai-agent/api/internal/csync"
-	"github.com/johnxcode/jx2ai-agent/api/internal/env"
-	"github.com/johnxcode/jx2ai-agent/api/internal/home"
+	"github.com/upperxcode/jx2ai-agent/api/internal/config"
+	"github.com/upperxcode/jx2ai-agent/api/internal/csync"
+	"github.com/upperxcode/jx2ai-agent/api/internal/env"
+	"github.com/upperxcode/jx2ai-agent/api/internal/home"
 )
 
 type PromptID string

@@ -11,12 +11,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/csync"
-	"github.com/johnxcode/jx2ai-agent/api/internal/diff"
-	"github.com/johnxcode/jx2ai-agent/api/internal/fsext"
-	"github.com/johnxcode/jx2ai-agent/api/internal/history"
-	"github.com/johnxcode/jx2ai-agent/api/internal/lsp"
-	"github.com/johnxcode/jx2ai-agent/api/internal/permission"
+	"github.com/upperxcode/jx2ai-agent/api/internal/csync"
+	"github.com/upperxcode/jx2ai-agent/api/internal/diff"
+	"github.com/upperxcode/jx2ai-agent/api/internal/fsext"
+	"github.com/upperxcode/jx2ai-agent/api/internal/history"
+	"github.com/upperxcode/jx2ai-agent/api/internal/lsp"
+	"github.com/upperxcode/jx2ai-agent/api/internal/permission"
 )
 
 //go:embed write.md
@@ -176,7 +176,7 @@ func (w *writeTool) Run(ctx context.Context, call ToolCall) (ToolResponse, error
 			return ToolResponse{}, fmt.Errorf("error creating file history: %w", err)
 		}
 	}
-	if file.Content != oldContent {
+	if (file != history.File{}) && file.Content != oldContent {
 		// User Manually changed the content store an intermediate version
 		_, err = w.files.CreateVersion(ctx, sessionID, filePath, oldContent)
 		if err != nil {

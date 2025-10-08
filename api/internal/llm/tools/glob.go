@@ -12,7 +12,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/johnxcode/jx2ai-agent/api/internal/fsext"
+	"github.com/upperxcode/jx2ai-agent/api/internal/fsext"
 )
 
 const GlobToolName = "glob"
